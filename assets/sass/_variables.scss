@@ -1,6 +1,16 @@
-$primary-color: #292930;
-$primary-color--complementary: #34333D;
-$secondary-color: #AFA7BD;
+$azul--logo: #1B365E;
+$azul--logo-claro: #4387EA;
+$azul--logo-claro--alpha: rgba(69, 134, 234, 0.6);
+$azul--logo-oscuro: #142744;
+$gris--logo: #5E5E5E;
+$gris--logo-claro: #AAAAAA;
+$gris--logo-oscuro: #444444;
+$blanco: #FFF;
+
+
+$primary-color: $azul--logo;
+$primary-color--complementary: $azul--logo-claro;
+$secondary-color: $gris--logo;
 $secondary-color--complementary: #6A697D;
 $font-titles: 'Roboto', sans-serif;
 $font-body: 'Roboto', sans-serif;

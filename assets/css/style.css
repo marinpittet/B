@@ -52,8 +52,8 @@ nav .topbar {
   width: 100vw;
   height: 25px;
   line-height: 25px;
-  background-color: #34333D;
-  color: #AFA7BD;
+  background-color: #4387EA;
+  color: #142744;
   font-size: 0.7rem;
   font-weight: 300;
   text-align: right;
@@ -67,16 +67,21 @@ nav .navbar {
   padding: 0 2rem 0 1rem;
   height: 60px;
   line-height: 60px;
-  background-color: #292930;
+  background-color: #1B365E;
   color: #EEE;
 }
 nav .navbar a {
   color: #fff;
 }
+nav .navbar h1 {
+  display: none;
+}
 nav .navbar .navbar__brand img {
   max-height: 60px;
+  width: 40%;
+  line-height: 60px;
+  vertical-align: middle;
   padding: 5px;
-  margin-right: 5px;
 }
 nav .navbar .navbar__items {
   display: flex;
@@ -102,9 +107,9 @@ nav .navbar .sidenav--open {
   height: 100%;
   width: 0px;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 85px;
-  background-color: #111;
+  background-color: #142744;
   overflow-x: hidden;
   padding-top: 40px;
   text-align: center;
@@ -122,36 +127,51 @@ nav .navbar .sidenav__items {
 .sec {
   grid-column: span 12;
   position: relative;
-  display: flex;
-}
-.sec .sec__title {
-  padding: 2rem 0;
+  z-index: 0;
+  /* seccion 1 */
+  /* /seccion 1 */
 }
 .sec .sec__background--1 {
   height: calc(100vh - 85px);
   width: 100%;
-  background-image: url("https://picsum.photos/g/700/?blur");
+  background-image: url("../images/banner--1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.sec .sec__background--1 .sec__background--text {
+  margin: 2rem 1rem 0 0;
+  background-color: rgba(69, 134, 234, 0.6);
+  color: #FFF;
+}
+.sec .sec__background--1 .sec__title {
+  padding: 0 0 2rem;
+}
+.sec .sec__background--1 .sec__text {
+  margin-bottom: 1.5rem;
+}
+.sec .sec__background--1 .btn {
+  margin-left: auto;
+  margin-right: 0;
 }
 .sec .sec__background--2 {
   height: calc(100vh - 85px);
   width: 100%;
-  background-color: #292930;
+  background-color: #4387EA;
 }
-.sec .sec__background--3 {
-  height: calc(100vh - 85px);
-  width: 100%;
-  background-image: url("https://picsum.photos/g/700/?random");
-  background-size: cover;
-  background-repeat: no-repeat;
+.sec .sec__background--2 .sec__background--text {
+  margin: 2rem 1rem 0 0;
+  background-color: rgba(69, 134, 234, 0.6);
+  color: #FFF;
 }
-.sec .sec__background--4 {
-  height: calc(100vh - 85px);
-  width: 100%;
-  background-image: url("https://picsum.photos/700/?random");
-  background-size: cover;
-  background-repeat: no-repeat;
+.sec .sec__background--2 .sec__title {
+  padding: 0 0 2rem;
+}
+.sec .sec__background--2 .sec__text {
+  margin-bottom: 1.5rem;
+}
+.sec .sec__background--2 .btn {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 /* Breakpoints allways at last for correct responsivity */
