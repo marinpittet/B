@@ -162,6 +162,8 @@ nav .navbar .sidenav__items {
   z-index: 0;
   /* seccion 1 */
   /* /seccion 1 */
+  /* seccion 2 */
+  /* /seccion 2 */
 }
 .sec .sec__background--1 {
   position: relative;
@@ -185,9 +187,14 @@ nav .navbar .sidenav__items {
   margin-bottom: 1.5rem;
 }
 .sec .sec__background--2 {
-  height: calc(100vh - 85px);
+  min-height: calc(100vh - 85px);
   width: 100%;
   background-color: #4387EA;
+  color: #FFF;
+}
+.sec .sec__background--2 h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 .sec .sec__background--2 .sec__background--text {
   margin: 2rem 1rem 0 0;
@@ -200,8 +207,22 @@ nav .navbar .sidenav__items {
 }
 .sec .sec__background--2 .sec__text {
   margin-bottom: 1.5rem;
+  font-weight: 300;
 }
 
+/* Footer */
+.footer__background {
+  background-color: #142744;
+}
+.footer__background .logo img {
+  max-height: 60px;
+  width: 100px;
+  line-height: 60px;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+/* /Footer */
 /* Breakpoints allways at last for correct responsivity */
 @media only screen and (max-width: 480px) {
   .container--general {

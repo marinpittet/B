@@ -160,10 +160,17 @@ nav {
     }
 /* /seccion 1 */
 
+/* seccion 2 */
 	.sec__background--2 {
-        height: calc(100vh - 85px);
+        min-height: calc(100vh - 85px);
         width: 100%;
         background-color: $primary-color--complementary;
+        color: $blanco;
+
+		h2 {
+			font-size: 1.2rem;
+			margin-bottom: .5rem;
+		}
 
        .sec__background--text {
         margin: 2rem 1rem 0 0;
@@ -178,10 +185,26 @@ nav {
 
 	    .sec__text {
 	        margin-bottom: 1.5rem;
+	        font-weight: 300;
 	    }
     }
+/* /seccion 2 */    
 }
 
+/* Footer */
+	.footer__background {
+		background-color: $azul--logo-oscuro;
+		.logo {
+	        img {
+	            max-height: 60px;
+	            width: 100px;
+	            line-height: 60px;
+	            vertical-align: middle;
+	            padding: 5px;
+	        }
+	    }
+	}
+/* /Footer */
 
 /* Breakpoints allways at last for correct responsivity */
 @import 'breakpoints';
