@@ -1,0 +1,116 @@
+@import 'media-queries';
+
+.container--general {
+    @include mobile-layout {
+        max-width: $mq-mobile;
+    }
+
+    @include mobile-landscape {
+        max-width: $mq-tablet - 1;
+    }
+
+    @include tablet-layout {
+        max-width: $mq-desktop - 1;
+    }
+
+    @include desktop-layout {
+        min-width: $mq-desktop;
+    }
+}
+
+.container--center {
+    @include mobile-layout {
+        max-width: $mq-mobile;
+    }
+
+    @include mobile-landscape {
+        max-width: $mq-tablet - 1;
+    }
+
+    @include tablet-layout {
+        max-width: $mq-desktop - 1;
+    }
+
+    @include desktop-layout {
+        max-width: $mq-desktop;
+        margin: 0 auto;
+    }
+}
+
+nav {
+.navbar {
+    .navbar__items {
+
+        @include mobile-layout {
+            display: none;
+            flex-direction: column;
+        }
+
+        @include mobile-landscape {
+            display: none;
+            flex-direction: column;
+        }
+
+        @include tablet-layout {
+            display: none;
+            flex-direction: column;
+        }
+    }
+
+    .navbar__toggle {
+        @include mobile-layout {
+            display: block;
+
+            .fa-bars {
+            	opacity: .8;
+                display: block;
+                line-height: 60px;
+                transition: 1s;
+            }
+
+            .fa-times {
+            	opacity: 0;
+                display: none;
+                line-height: 60px;
+                transition: 1s;
+            }
+        }
+
+        @include mobile-landscape {
+            display: block;
+
+            .fa-bars {
+            	opacity: .8;
+                display: block;
+                line-height: 60px;
+                transition: 1s;
+            }
+
+            .fa-times {
+            	opacity: 0;
+                display: none;
+                line-height: 60px;
+                transition: 1s;
+            }
+        }
+
+        @include tablet-layout {
+            display: block;
+
+            .fa-bars {
+            	opacity: .8;
+                display: block;
+                line-height: 60px;
+                transition: 1s;
+            }
+
+            .fa-times {
+            	opacity: 0;
+                display: none;
+                line-height: 60px;
+                transition: 1s;
+            }
+        }
+    }
+}
+}
