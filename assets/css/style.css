@@ -139,19 +139,21 @@ nav .navbar .sidenav__items {
 .sec {
   grid-column: span 12;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   /* seccion 1 */
   /* /seccion 1 */
 }
 .sec .sec__background--1 {
+  position: relative;
   height: calc(100vh - 85px);
   width: 100%;
   background-image: url("../images/banner--1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 0;
+  z-index: -1;
 }
 .sec .sec__background--1 .sec__background--text {
+  position: absolute;
   margin: 2rem 1rem 0 0;
   background-color: rgba(69, 134, 234, 0.6);
   color: #FFF;
