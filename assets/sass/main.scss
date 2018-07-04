@@ -116,7 +116,7 @@ nav {
 .sec {
 	grid-column: span 12;
     position: relative;
-    z-index: 0;
+    z-index: 1;
 /* seccion 1 */
     .sec__background--1 {
         height: calc(100vh - 85px);
@@ -124,6 +124,7 @@ nav {
         background-image: url('../images/banner--1.jpg');
         background-size: cover;
         background-repeat: no-repeat;
+        z-index: 0;
 
        .sec__background--text {
         margin: 2rem 1rem 0 0;
