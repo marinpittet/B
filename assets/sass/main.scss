@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'grid';
 @import 'media-queries';
+@import 'buttons';
 
 html {
   overflow-x: hidden;
@@ -156,11 +157,6 @@ nav {
 	    .sec__text {
 	        margin-bottom: 1.5rem;
 	    }
-
-	    .btn {
-	        margin-left: auto;
-	        margin-right: 0;
-	    }
     }
 /* /seccion 1 */
 
@@ -173,6 +169,7 @@ nav {
         margin: 2rem 1rem 0 0;
         background-color: $azul--logo-claro--alpha;
     	color: $blanco;
+    	vertical-align: middle;
     	} 
 
     	.sec__title {
@@ -181,11 +178,6 @@ nav {
 
 	    .sec__text {
 	        margin-bottom: 1.5rem;
-	    }
-
-	    .btn {
-	        margin-left: auto;
-	        margin-right: 0;
 	    }
     }
 }

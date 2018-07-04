@@ -1,0 +1,19 @@
+.btn {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background-color: $blanco;
+    border: solid 1px $primary-color--complementary;
+    color: $primary-color--complementary;
+    margin: auto;
+}
+
+.btn--secondary {
+    background-color: $azul--logo-oscuro;
+    border: solid 1px $primary-color--complementary;
+    color: $blanco;
+    margin: auto;
+}

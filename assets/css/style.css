@@ -26,6 +26,26 @@
   padding: 0;
 }
 
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: #FFF;
+  border: solid 1px #4387EA;
+  color: #4387EA;
+  margin: auto;
+}
+
+.btn--secondary {
+  background-color: #142744;
+  border: solid 1px #4387EA;
+  color: #FFF;
+  margin: auto;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -155,7 +175,7 @@ nav .navbar .sidenav__items {
 .sec .sec__background--1 .sec__background--text {
   position: absolute;
   margin: 2rem 1rem 0 0;
-  background-color: rgba(69, 134, 234, 0.6);
+  background-color: rgba(69, 134, 234, 0.7);
   color: #FFF;
 }
 .sec .sec__background--1 .sec__title {
@@ -164,10 +184,6 @@ nav .navbar .sidenav__items {
 .sec .sec__background--1 .sec__text {
   margin-bottom: 1.5rem;
 }
-.sec .sec__background--1 .btn {
-  margin-left: auto;
-  margin-right: 0;
-}
 .sec .sec__background--2 {
   height: calc(100vh - 85px);
   width: 100%;
@@ -175,18 +191,15 @@ nav .navbar .sidenav__items {
 }
 .sec .sec__background--2 .sec__background--text {
   margin: 2rem 1rem 0 0;
-  background-color: rgba(69, 134, 234, 0.6);
+  background-color: rgba(69, 134, 234, 0.7);
   color: #FFF;
+  vertical-align: middle;
 }
 .sec .sec__background--2 .sec__title {
   padding: 0 0 2rem;
 }
 .sec .sec__background--2 .sec__text {
   margin-bottom: 1.5rem;
-}
-.sec .sec__background--2 .btn {
-  margin-left: auto;
-  margin-right: 0;
 }
 
 /* Breakpoints allways at last for correct responsivity */
