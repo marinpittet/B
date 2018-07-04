@@ -47,16 +47,27 @@ nav {
 }
 nav .topbar {
   grid-column: span 12;
+  display: flex;
+  justify-content: space-between;
   position: fixed;
-  padding: 0 2rem;
+  padding: 0 2rem 0 1rem;
   width: 100vw;
   height: 25px;
   line-height: 25px;
   background-color: #4387EA;
+}
+nav .topbar .date {
   color: #142744;
   font-size: 0.7rem;
   font-weight: 300;
-  text-align: right;
+}
+nav .topbar .social-networks {
+  font-size: 1rem;
+  line-height: 25px;
+}
+nav .topbar .social-networks a {
+  margin: 0 0 0 0.5rem;
+  color: #142744;
 }
 nav .navbar {
   grid-column: span 12;
