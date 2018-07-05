@@ -61,7 +61,6 @@ body {
 
 /* Barra de navegación con despliegue lateral */
 nav {
-  z-index: 1000;
   height: 85px;
   width: 100vw;
 }
@@ -75,6 +74,7 @@ nav .topbar {
   height: 25px;
   line-height: 25px;
   background-color: #4387EA;
+  z-index: 1000;
 }
 nav .topbar .date {
   color: #142744;
@@ -101,6 +101,7 @@ nav .navbar {
   line-height: 60px;
   background-color: #1B365E;
   color: #EEE;
+  z-index: 1000;
 }
 nav .navbar a {
   color: #fff;
